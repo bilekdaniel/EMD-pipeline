@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+#SBATCH --job-name VariantCalling
+#SBATCH --account OPEN-29-10
+#SBATCH --partition qcpu
+#SBATCH --nodes 1
+#SBATCH --ntasks-per-node 128
+#SBATCH --time 16:00:00
+#SBATCH --output run_log/slurm-%j.out
+#SBATCH --mail-type END,FAIL
+#SBATCH --mail-user P22016@student.osu.cz
+
+cd /scratch/project/open-27-18/mrd_trans
+source activate nextflowenv
+nextflow run main.nf -profile standard -resume silly_almeida
