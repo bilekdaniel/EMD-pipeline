@@ -19,3 +19,4 @@ genome
 known_variants.vcf.gz
 utils/archive
 scripts/
+.Rhistory
