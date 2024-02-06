@@ -1,5 +1,5 @@
 
-maf_files <- list.files(path = "/scratch/project/open-27-18/mrd_trans/processed/",
+maf_files <- list.files(path = "/scratch/project/open-27-18/emd_trans/processed/",
                         pattern = "\\.maf$",
                         full.names = TRUE,
                         recursive = TRUE)
